@@ -1,0 +1,43 @@
+2023-07-28 16:25:44,300 INFO    StreamThr :14032 [internal.py:wandb_internal():86] W&B internal server running at pid: 14032, started at: 2023-07-28 16:25:44.300005
+2023-07-28 16:25:44,300 DEBUG   HandlerThread:14032 [handler.py:handle_request():144] handle_request: status
+2023-07-28 16:25:44,300 INFO    WriterThread:14032 [datastore.py:open_for_write():85] open: E:\ViT\vision-transformer-pytorch-main\wandb\run-20230728_162543-gd11h6a8\run-gd11h6a8.wandb
+2023-07-28 16:25:44,300 DEBUG   SenderThread:14032 [sender.py:send():379] send: header
+2023-07-28 16:25:44,300 DEBUG   SenderThread:14032 [sender.py:send():379] send: run
+2023-07-28 16:25:45,315 INFO    SenderThread:14032 [dir_watcher.py:__init__():211] watching files in: E:\ViT\vision-transformer-pytorch-main\wandb\run-20230728_162543-gd11h6a8\files
+2023-07-28 16:25:45,315 INFO    SenderThread:14032 [sender.py:_start_run_threads():1122] run started: gd11h6a8 with start time 1690532744.264666
+2023-07-28 16:25:45,315 DEBUG   SenderThread:14032 [sender.py:send_request():406] send_request: summary_record
+2023-07-28 16:25:45,315 INFO    SenderThread:14032 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-07-28 16:25:45,348 DEBUG   HandlerThread:14032 [handler.py:handle_request():144] handle_request: check_version
+2023-07-28 16:25:45,348 DEBUG   SenderThread:14032 [sender.py:send_request():406] send_request: check_version
+2023-07-28 16:25:45,721 DEBUG   HandlerThread:14032 [handler.py:handle_request():144] handle_request: run_start
+2023-07-28 16:25:46,332 INFO    Thread-12 :14032 [dir_watcher.py:_on_file_created():272] file/dir created: E:\ViT\vision-transformer-pytorch-main\wandb\run-20230728_162543-gd11h6a8\files\wandb-summary.json
+2023-07-28 16:25:46,770 DEBUG   HandlerThread:14032 [system_info.py:__init__():31] System info init
+2023-07-28 16:25:46,770 DEBUG   HandlerThread:14032 [system_info.py:__init__():46] System info init done
+2023-07-28 16:25:46,770 INFO    HandlerThread:14032 [system_monitor.py:start():181] Starting system monitor
+2023-07-28 16:25:46,770 INFO    SystemMonitor:14032 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-28 16:25:46,770 INFO    HandlerThread:14032 [system_monitor.py:probe():201] Collecting system info
+2023-07-28 16:25:46,770 INFO    SystemMonitor:14032 [interfaces.py:start():190] Started cpu monitoring
+2023-07-28 16:25:46,770 INFO    SystemMonitor:14032 [interfaces.py:start():190] Started disk monitoring
+2023-07-28 16:25:46,770 INFO    SystemMonitor:14032 [interfaces.py:start():190] Started gpu monitoring
+2023-07-28 16:25:46,770 INFO    SystemMonitor:14032 [interfaces.py:start():190] Started memory monitoring
+2023-07-28 16:25:46,910 INFO    SystemMonitor:14032 [interfaces.py:start():190] Started network monitoring
+2023-07-28 16:25:47,285 DEBUG   HandlerThread:14032 [system_info.py:probe():195] Probing system
+2023-07-28 16:25:47,285 DEBUG   HandlerThread:14032 [system_info.py:probe():240] Probing system done
+2023-07-28 16:25:47,285 DEBUG   HandlerThread:14032 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19042-SP0', 'python': '3.10.9', 'heartbeatAt': '2023-07-28T08:25:47.285650', 'startedAt': '2023-07-28T08:25:43.753611', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'e:\\vit\\vision-transformer-pytorch-main\\main.py', 'codePath': 'main.py', 'host': 'DESKTOP-6P9L7IR', 'username': 'Administrator', 'executable': 'C:\\ProgramData\\anaconda3\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 6, 'cpu_freq': {'current': 3000.0, 'min': 0.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 3000.0, 'min': 0.0, 'max': 3000.0}], 'disk': {'total': 1862.974609375, 'used': 70.435546875}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 31.944000244140625}}
+2023-07-28 16:25:47,285 INFO    HandlerThread:14032 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-28 16:25:47,285 INFO    HandlerThread:14032 [system_monitor.py:probe():214] Publishing system info
+2023-07-28 16:25:47,285 DEBUG   HandlerThread:14032 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-28 16:25:48,204 DEBUG   HandlerThread:14032 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-28 16:25:48,204 DEBUG   HandlerThread:14032 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-28 16:25:48,220 INFO    Thread-12 :14032 [dir_watcher.py:_on_file_created():272] file/dir created: E:\ViT\vision-transformer-pytorch-main\wandb\run-20230728_162543-gd11h6a8\files\requirements.txt
+2023-07-28 16:25:49,250 INFO    Thread-12 :14032 [dir_watcher.py:_on_file_created():272] file/dir created: E:\ViT\vision-transformer-pytorch-main\wandb\run-20230728_162543-gd11h6a8\files\conda-environment.yaml
+2023-07-28 16:25:51,112 INFO    cpu       :14032 [interfaces.py:monitor():140] Process cpu has exited.
+2023-07-28 16:25:51,112 DEBUG   SystemMonitor:14032 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-28 16:25:51,112 DEBUG   SystemMonitor:14032 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-28 16:25:51,112 DEBUG   SystemMonitor:14032 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-28 16:25:52,845 INFO    MainThread:14032 [internal.py:handle_exit():76] Internal process exited
+2023-07-28 16:25:53,393 WARNING StreamThr :14032 [internal.py:is_dead():414] Internal process exiting, parent pid 8072 disappeared
+2023-07-28 16:25:54,269 ERROR   StreamThr :14032 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-07-28 16:25:54,502 INFO    WriterThread:14032 [datastore.py:close():294] close: E:\ViT\vision-transformer-pytorch-main\wandb\run-20230728_162543-gd11h6a8\run-gd11h6a8.wandb
+2023-07-28 16:25:54,784 INFO    SenderThread:14032 [sender.py:finish():1552] shutting down sender
+2023-07-28 16:25:54,784 INFO    SenderThread:14032 [dir_watcher.py:finish():359] shutting down directory watcher
