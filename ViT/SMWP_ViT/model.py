@@ -7,7 +7,7 @@ from PIL import Image
 from torchvision.transforms import Compose, Resize, ToTensor
 from einops import rearrange, reduce, repeat
 from einops.layers.torch import Rearrange, Reduce
-from pytorch_wavelets import DWT1DForward, DWT1DInverse,DWTForward, DWTInverse # or simply DWT1D, IDWT1D
+from pytorch_wavelets import DWT1DForward, DWT1DInverse,DWTForward, DWTInverse 
 import math
 import torch
 import torch.nn as nn
@@ -43,7 +43,6 @@ class PatchEmbedding(nn.Module):
     
     def forward(self, x: Tensor) :
         b, _, _, _ = x.shape
-        # print(x.shape)#128, 3, 224, 224
         # x = self.projection(x)
         result1 = []
         result1.append(x)
@@ -65,24 +64,14 @@ class PatchEmbedding(nn.Module):
             result = torch.cat((result,result2[i]),1)
         result_spatial = self.projection2(x)
         result = torch.cat((result,result_spatial),1)
-        # print(result.shape)
         x = result
         x = self.projection(x)
-        # x = x.reshape(x.shape[0],16,16,588)
-        # x = x.permute(0,3,1,2)
-        # x = self.projection(x)
-        # x = self.rearrange1(x)
-        # print(x.shape)
-        # sys.exit()
-        # print(x.shape)#128, 196, 768
+
         cls_tokens = repeat(self.cls_token, '() n e -> b n e', b=b)
-        # print(cls_tokens.shape)#128, 1, 768
         # prepend the cls token to the input
         x = torch.cat([cls_tokens, x], dim=1)
-        # print(x.shape)#128, 197, 768
         # add position embedding
         x += self.positions
-        # print(x.shape)#128, 197, 768
         return x
 
 class MultiHeadAttention(nn.Module):

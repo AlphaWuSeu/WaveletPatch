@@ -1,3 +1,5 @@
+
+
 ## Vision Transformer : A Pytorch Implementation 
 
 This is a Pytorch implementation of Google AI's 2021 Vision Transformer. (Distributed Data Parallel & Mixed Precision)
@@ -18,29 +20,8 @@ Einops 0.4.1
 
 ##  Quickstart 
 
-### Weights & Biases(Visualization tool)
-
-- Before starting, you should login wandb using your personal API key. 
-- Weights & Biases : https://wandb.ai/site
-
-```shell
-!pip install wandb
-wandb login PERSONAL_API_KEY
-```
-
-### Cloning a repository
-
-```shell
-git clone https://github.com/ssuncheol/vision-transformer-pytorch.git
-```
-
 ### Prepare a dataset(Imagenet-1k)
 
-- Download Imagenet-1k from open-source 
-
-```shell 
-wget http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_train.tar
-```
 - Make the folder structure of the dataset as follows 
 
 ```
@@ -94,9 +75,6 @@ I use ImageNet-1k Dataset to train and evalute model
 
 
 ### How to train
-
-Training time is 5 days with 8 GPUs. (RTX 3090 Ti)
-
 
 ```shell
 python3 main.py --lr=0.001 --batch_size=1024 --weight_decay=0.3 --t_max=80000 --mode='train' --world_size=8
